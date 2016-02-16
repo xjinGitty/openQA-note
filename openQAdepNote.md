@@ -37,3 +37,8 @@ needles)
 ## 2016-2-15
 1. openQA version should be downgrade via yast for the naming rule changed
    (when would like to upgrade it)
+
+## 2016-2-16-quesion:
+1. to make sure worker could access the instance, should add key/secret pair of webui in the /etc/openqa/client.ini file where worker is installed
+2. can [localhost] in the above file be replaced with the FQDN like [http://test.test]
+3. when would like to configure remote worker: modify the worker installed client.ini file also? or just the the worker.ini file?

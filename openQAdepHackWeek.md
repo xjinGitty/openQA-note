@@ -5,6 +5,7 @@
 2. old version zypper won't refresh repo data automatically ---> package version conflict
 3. pool should be owned by _openqa-worker
 4. played steps: openqa and worker been installed; then fetchneedle; have the template as configuration file; run client script to create job
+5. by default, after install openqa and restart apache2 and openqa-webui service, the file openqa.conf won't be provided in the directory: /etc/apache/vhost.d/, we sould cp it from openqa.conf.template
 
 
 ### Q&A:

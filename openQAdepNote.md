@@ -42,3 +42,23 @@ needles)
 1. to make sure worker could access the instance, should add key/secret pair of webui in the /etc/openqa/client.ini file where worker is installed
 2. can [localhost] in the above file be replaced with the FQDN like [http://test.test]
 3. when would like to configure remote worker: modify the worker installed client.ini file also? or just the the worker.ini file?
+
+## 2016-2-17
+1. send_key defined in the baseclass.pm under /usr/lib/os-autoinst/backend as
+   pointd out in the testapi.pm file as: $bmwqemu::backend->send_key
+2. try xev and the qemu send_key function
+3. alt-f2 not work well: change the host key-mapping not use it; vncviewer
+   localhost:91 --Shared; sleep 60; to make gnome-shell up successfully
+--->performance issue
+<<<<<<< HEAD
+
+
+## 2016-2-22
+1. origin and upstream remote repo added
+2. fork repo sync automately-> done
+3. in the origin repo, when makeing pull request to upstream, should exclude
+   the difference from main.pm file (sle version) and all the openqa arch
+relatd changes. only regression is required
+
+=======
+>>>>>>> b028a33155ad73049fc2e2996fa77fed3aba49eb
